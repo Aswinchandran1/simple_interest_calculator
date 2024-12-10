@@ -1,0 +1,522 @@
+            --------------------------------------------------------------------      
+                                         MERAN STACK
+            --------------------------------------------------------------------
+
+
+        ------------------------------------------------------------------------------
+                                             HTML
+        ------------------------------------------------------------------------------
+
+           1. Markup language - set  of rules that will define what type of content document should hold
+
+           2.HTML -  Used to display contents  in a webpage
+           3. HTML Document - collection of HTML elements
+                        -- HTML elements: starting tag, content, ending tag
+                        --Tags: <...> content </...>
+            4. HTML structure:    
+                                 <html> 
+                                      <head>
+                                        <title>
+                                           title.......
+                                         </title>
+                                      </head>
+
+                                      <body>
+                                          content
+                                      </body>
+                                   </html>
+            5. Latest version - HTML 5
+            6. Basic Tags:  Used to display content in web page
+                - Heading tags: <h1>........<h6>
+                - pragraphs tag:  <p> tag
+                - Text Decoration Tags:   
+                  - Bold -<b> tag
+                  -Itallics - <em> tag
+                  -Highlight - <mark> tag
+                  -Strike - <s> tag
+                  -Superlative - <sup>
+                  -Subscript  -<sub>
+                  - Links - <a> tag
+                  - To break line - <br> tag
+                  - Ordered List - ol tag, li tag
+                  - Unordered List - ul tag, li tag
+                  - Description List - dl tag, dt tag, dd tag
+
+                  - Table - used to display contents in rows and columns : table tag
+                  - thead : table head
+                  - tbody : table body
+                  - tr tag : rows
+                  - th / td : columns
+                  - colspan - used to merge or group columns
+                     rowspan - used to merge or group rows
+                  - Form Tags-
+                      - input tags: text, number, date
+                      - check box
+                      - Dropdown
+                      - radio button
+                      - Button
+                  - Images : img tag
+                  -container tags - can include other tags inside a tag
+                    - div tag
+                    - section tag
+                    - article tag
+                  - Embed data  from other website -
+                      -iframe
+                  - Icons - i Tag
+                  -Semantic tags - 
+                      - Header tag 
+                      - Nav tag
+                      - section tag
+                      - article tag
+                      - aside tag
+                      - Footer tag
+
+            7. Based on display value of tags in browser, we can classify tags: 
+                - Block tags- It use entire width of the browser to display content in browser
+                  ex: h1-h6 tags, p tag
+                - Inline tags - It use only  width of the content to display content in browser
+                  ex: a tag, Img tag
+
+           
+                
+       ------------------------------------------------------------------------------
+                                             CSS - Cascading Style sheet
+        ------------------------------------------------------------------------------
+
+        1. Used to style the HTMl Elements
+        2. How to apply CSS in HTML -
+              - Inline CSS - style attribute
+                 - Syntax :  style="property:value; "
+              - Internal CSS - <style>
+                  - Syntax:
+                      <style>
+                        selectors{
+                          property: value;
+                        }
+                      </style>
+               - External CSS - Use external CSS file, we have to link css file to HTML file
+                    -Syntax: 
+                        selectors{
+                          property: value;
+                        }
+          3. CSS selectors- Used to for selecting html elements to css file
+                  - Tag name
+                  - id - use #
+                  - class - use 
+                  - universal selector
+                  - Css combinators - 
+                      - Grouping selectors - use comma
+                      - Decendant selector - use space
+                      - Child selector - use  > 
+                      - sibling selector - ~
+                      - immediate sibling selector - using +
+            4. Box model
+                - border
+                - margin
+                - padding
+            5. CSS properties -
+                -float : float elements in left or right
+                - position : control position of elements in html
+                    - static
+                    - fixed
+                    - absolute
+                    - Sticky
+                - zindex
+                - flexBox : used to arrange html elements in either row/column
+                    - Flex-container: parent tag which holds elements that to be arranged as row/column, apply  flex to the parent
+                - psuedo class : define a special state of an element.
+                  syntax: selector:pseudoclass{
+                    property:value;
+                  }
+                - Grid : used to display elements in rows and columns, where we can fix the column width
+                  -Grid container: display as Grid
+                  - grid-template-column /row : to set width of column / row
+                   - repeate(column/row number , size)
+                - linear-gradient : is used to set combination of colors as background
+                    syntax: background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+                -CSS Animations- animation property, to define  @keyframes
+                -Animation libraries
+                  - animate: https://animate.style/
+                  - AOS animation: https://michalsnik.github.io/aos/
+                  - locomotive scroll
+            6. website hosting:
+                      - netlify
+                      - github pages
+                      - Vercel
+            7. Media quries: used to design responsive web pages
+              -Media queries can be used to check many things, such as:
+
+                    - width and height of the viewport
+                   -  orientation of the viewport (landscape or portrait)
+                    - resolution
+              - @media use keyword:
+                  @media not|only mediatype and (media feature) and (media feature) {
+                    CSS-Code;
+                  }
+              - Screen Break points: 
+                  480px- sm, 760px - md, 992px- lg, 1200px - xl
+                  
+
+        ------------------------------------------------------------------------------
+                         Bootstrap- CSS framework
+        ------------------------------------------------------------------------------  
+        1. used to build fast and responsive pages 
+        2. predefined classes of styles, commonly used BOOTSTRAP classes        
+            - Container/container-fluid    
+            - border
+            - colors: success-green, 
+                      danger-red, 
+                      warning-orange,
+                      primary-blue,
+                      info- sky blue,
+                      dark- black,
+                      light- white,
+                      secondary- grey
+            - margin : m/mt/mb/ms/me - 1/2/3/4/5
+            - text-center
+            - padding : p/pt/pb/ps/pe - 1/2/3/4/5
+            - bg- color
+            -text-color
+            -img-fluid
+            -width: w-25/50/75/100
+            - fs- 1/2/3/4/5
+            - fw- bold/medium/bolder......
+            - btn btn-color
+            - flex: d-flex
+            - input: form-control
+            - Grid : 
+                - rows - maximum division as column 12 
+                - columns
+            
+        ------------------------------------------------------------------------------
+                         Tailwind- CSS framework
+        ------------------------------------------------------------------------------ 
+        1. Rapidly build modern webpages witout leaving your html
+                
+       ------------------------------------------------------------------------------
+                  GIT & GITHUB
+        ------------------------------------------------------------------------------
+
+        1. GIT:  used to control versions of a code
+        2. GIT commands:
+              - git status: used to check status of git inside the folder
+              - git init : used to create/ initiate git repository in a folder
+              - git add . : used to track all untracked files to git
+              - git commit -m "message" - used to save / store tracked files to git
+
+
+
+        ------------------------------------------------------------------------------
+                  JavaScript : 
+        ------------------------------------------------------------------------------
+        1. nodeJS: Its a collection of JS libraries and runtime environment for JS
+        2. Basic concepts in JS:
+              - Display contents: console.log(content) method
+              - Data types
+                -number
+                -Text: contents inside double or single quotes
+                -boolean
+                - undefined
+                - object
+              - Combining different types of data in js
+                - use commas
+                - contantenation use + : convert all content into starting
+                - Template Literals:  combine different types of data within a back tick symbol, it uses
+                 ${variableName } to display variables 
+
+
+
+              - variables: used to store data
+              - Identifires: set of rules which define what name should assign to a variable.
+              - Creation of variables: 3 ways
+                - using var keyword : syntax: var variableName / var variable_name
+                - using const keyword: syntax : const variableName = value
+                - using let keyword: syntax : let variableName = value
+              -Hoisting: moving a variable declaration to the top of the code
+              - Difference between different variables in JS
+
+              var                               const                               let
+          --------------------------------------------------------------------------------------------------------
+              1. use var keyword                  use const keyword                       use let keyword
+              2. can reassign its value           cannot reassign its value               can reassign its value 
+              3. Global scope                     Block scope                             Block scope
+              4. Hoisted with initial value       Hoisted without initial value           Hoisted without initial value
+
+      - Operators in JS
+        - Assignment Operator : =
+        - Arithemetic Operators: * / %  **
+        - Relational Operators: > < >= <= == === !=   
+        - Logic operators: && || ! return boolean
+              &&                                   ||                      !
+            ---------------------------------------------------------------------------------
+            T && T = T                          T || T = T
+            T && F = F                          T || F = T              T! = F
+            F && T = F                          F || T = T              F! = T
+            F && F = F                          F || F = F
+        - INCREMENT /Decrement operators: ++, --
+        - Short hand operators: += , -= , *=
+        - Ternary Operator : condition ? when condition true : when condition false 
+        - Truthy operator : condition && when condition true
+        - spread operator: used to spread an iterating variable to a single array, symbol for spread is ...
+        - REST operator used to combine rest of the data to a single array
+         use ... operator
+      - Desicion Making / Conditional Statements:
+          - if statement:  syntax:  if(condition){ when the condition is true}
+          - if-else statements: syntax: 
+                  if(condition){ when the condition is true} 
+                    else{ when the condition is false}
+          - else if Ladder
+          - Switch statements: syntax-  switch(condition{
+             case answer1:  statements
+             break;
+             case answer 2: statements
+             break
+             default:  statements
+          })
+      - Looping statements: Used to repeate same task multipls times
+        - while Loop: syntax:
+          1. Initalize a variable
+          2. while(condition using variable){
+            - while loop execute when condition become true
+          3. Change the value of the variable used in the condition
+          }
+        - for loop: syntax:
+            for(Initalize a variable; condition using variable; change the valueof variable used in condition){
+              Excution condition become true
+            }
+          - break statements: used to break from a loop  execution 
+          - continue statements:  used to skip loop for certain values in a loop
+        - Nested loops : A loop inside another loop
+          -Syntax: Outer loop{
+                      Inner loop{
+                        //complete execution first
+                      }
+                    }
+      - Functions: Used to perform a specific task, normal functions are Hoisted
+        - Function definition part: define task to be performed by the Function
+          - Syntax: function function_name(args1, args2.....){
+            function body whre we can define task to be performes using arguments passed to the function
+          }
+        - Function call: Used  to execute function in JS
+          - syntax: function_name(para1, para2.....)
+        - return statements used to return the execution from definition to function   call along with value from its refinition, return must define at the end of the function definition.
+        - Types of function:
+              - Predefined functions: ex: console.log(content), Number(value)
+              - Arrow functions: Used as an alternative for normal function
+                - syntax: var/const/let function-name = (arg1, args2.....) =>{
+                  function body to perform task
+                }
+              - Callback function: A function definition inside another function call
+                  Syntax: functionName( ()=>{function Body})
+              - Anonymous function/  Nameless function: are self executing
+              - Recursive function/Repeating function:  used to perform a task         repeatedly , calling a function inside, its own definition.
+                -syntax: function fun_name(){.... fun_name()}
+              - Nested functions: Defining a function inside another function definition
+              - Closure property: In nested functions child function can access its parent data.
+
+      - Array: used to store multiple values in a single variable
+        Array methods
+            - push(value): insert a value to the end of an array
+            - unshift(value): insert a value to the start of an array
+            - pop(): remove value at the end of array
+            - shift(): remove value at beginning of an array
+            - sort(callbackfun): used to sort existing array in ascending/decscending order
+            - forEach(callbackfun) : An alternative for for-of loop
+            - filter(callbackfun) : create a new array with values satisfying condition applied in the existing Array
+            - find(callbackfun): return a value which satisfies condition applied to the existing array.
+            - map(callbackfn):  returns a new array with values after applying a mapping function to the Existing array.
+            - reduce(callbackfunction):  return either highest/lowest/sum of an existing array after applying a reduce function.
+            - reduceRight(callbackfunction):  return either first highest/lowest/sum of an existing array after applying a reduce function.
+            - some(callbackfn): returns a boolean which satisfies condition applied in an existing array
+            - every(callbackfn): returns a boolean which satisfies condition applied in an existing array, it retuen true if all items satisfying the condition.
+            - flat(depth): return a new array with reduced dimention of an existing array to its depth value, if depth is 'infinity ' this flas will always return array with dimention 1
+            -includes(array-item): return boolean based on an array value present in it or not
+            - splice(index, deleteCount,replacement value if needed): retun a array without deleted item/ also can replace items in an array.
+            -reverse(): return new array to join item with existing array
+            -concat(item): return new array including both array elements
+            - join(seperator): used to retun a string of array items seperated with given seperator.
+
+      - String methods:
+          - length: gives total number of charecters in string
+          - toUpperCase: convert string to capital letters
+          - toLowerCase: convert string to small letters
+          - substring(starting index, ending index): returns  sub string of given index
+          - slice(starting index, ending index): returns  sub string of given index/ and also remove charecters from end of the string
+          - startsWith(charecter to check): returns boolean , the string starts with given charecter or not
+          - endsWith(charecter to check): returns boolean , the string ends with given charecter or not
+          - split(): used to split words to charecters
+          - includes(substring): retuns boolean value whether it contains substring or not
+          - trim(): used to remove unwanted spaces from starting and ending of a string.
+      - Object :used to store data in key -value pairs,  {key1:value, key2:value,.....}
+        - To access values stored in an object
+          - Bracket notation:  objectName["key"]
+          - Dot notation: objectName.key
+        - To check a key is present in an object
+          - use "in" operators, it returns  boolean value, syntax: "key" in objectname
+          - hasOwnProperty() object method, return boolean, syntax: objectName.hasOwnProperty("key")
+        - To insert value in an object, using assign oerators
+          - objectName["key"] =  value / objectname.key = value
+          - Object.assign(destination, source)
+        - To update value in an object: use assign operators
+        - Object.keys(objectName):  return a array of all keys
+        - Object.values(objectName): return a array of all values in the object
+        - Object.entries(objectname): used to convert an object to an array
+        - delete keyword : it removes a key from object
+        - Destructuring of an object:  used to access the values in an object without using any notations.
+          - const {key1,key2....} = objectname
+      - Exception/ Runtime error handling:  use try-catch block
+      - OOPs : : Object oriented programming language
+          - Basic concepts:
+              - class:  blueprint of object, can have some properties, functions , use keyword class,  function used inside a class known as method., Predefined function- 'constructor' initializing class properties.
+              - Object : real world entity,  used to access class properties/function outside. create an object: new class-name()
+              - Reference: "this' keyword used to link properties / functions with its own class
+          - Features of OOPs:
+              - Inheritance: 
+                  - Classical inheritance: using keyword extends
+                  - Prototype inheritance: using keyword __proto__
+              - polymorphism:
+              - Abstraction:
+              - Encapsulation:
+
+      ------------------------------------------------------------------------------
+                  JavaScript :  FRONT END
+      ------------------------------------------------------------------------------
+
+  1. Used to provide behaviour to HTML elements
+  2. Appling JS to HTML elements:
+    - Internal JS - JS code in script tag
+    - External JS - Link an external JS file using script tag
+  3. DOM: Document Object Model : Tree structure using object corresponding to a webpage
+  4. DOM methods:  used to select HTML elements into JS
+      - using tag: document.getElementByTagName("tag")
+      - using id: document.getElementById("ID") / id
+      - using class :document.getElementByClassName("class")
+      - using querySelector: document.querySelector("tag/#id/.class")
+      - using querySelectorAll: document.querySelectorAll("tag/#id/.class")
+  5. Events: triggered by user action, events occured in html elements
+      - Mouse Triggered events: click, hover,drop and drag
+      - keyboard related events: key press down ,up, .....
+      - Touch related events:
+  6. Handle an event in HTML:  event-function-call(), behaviour change must define as a function in js
+  7. Access / update content of an HTML element in JS:
+        -innerHTML/innertext property
+
+  8. Permanently store data in browser
+      -data will be stored permanent;data stored  as key-value pairs. type of both key and value must be string , 
+      to convert value to string - use JSON.stringify(value)
+      string data to normal type: JSON.parse(value)
+      - Local storage: 
+          - setItem(key,value): used to store data
+          - getItem(key) : used to get value from storage
+          - removeItem(key) : used delete a value from storage
+          - clear() : used to clear storage
+      - Session storage: 
+    9. Working  Broweser JS runtime environment:
+        - Javascript engines: It handles js execution, covert js code to code understand by browser engine
+        - Call stack: used to keep track of currently executing functions, make sure each one finishes before moving to next. Only one call stack  in JS engine thats why  it is known as Single Threaded Programming.
+            - Js handle 2 types of functions
+              - Syncronous function: Functions executes without any delay
+              - Asyncronous function: Functions executes with some delay
+                  - CallBack functions: Task Queue(macro Task queue) -  like setTimeout/ user events(click/drag....)
+                  - Web APIs:  Stored in Micro task queue which is a priority queue
+          - Event loop: It manages the flow of the code, ensuring asyncronous operation and user interaction run smoothly
+        - Heap: Storage for variable and objects in js
+    10.  Asyncronous function handling in JS
+        - Call back function: Nesting of callback function Will leads to callBack hell,
+         that means js wont give any response for this kind of call..
+         - Promise: Used to resolve asyncronous function  it will definitely gives you a response, A  ways to resolve promise:
+            - resolved state: if asyncronous function call return a response that state of promise is known as "resolved state. to get response from resolved state  we have to use then method.
+            - reject state: If asyncronouse function call returns  nothing after making the call that state.  catch method.
+             - Async - Await keywords: To make promise much more easier, to  avoid callback from promise, is a function is asyncronous then only we can use await inside the function.
+            -Async : makes a function return a promise
+            - Await : makes a function to wait for a promise
+            
+    11. API (Application Prigramming Interface):  Used to communicate between applications using internet
+      - Types of API's:  Based on communication
+             - REST/SOAP : Client- server applications
+             - SOCKET : WEB chatting applications
+             - GRAPHQL
+      - API testing Tools:
+          - Postman
+          - Thunderclient : 
+    12. URL : Uniform resource Locator
+        ex: https://jsonplaceholder.typicode.com/users/1
+          - Base URL: https://jsonplaceholder.typicode.com
+          - URI:  Uniform resorce identifier ex: users
+          - Path Parameter:  numbers associated in URI
+        ex: https://www.google.com/search?q=mercury&sca
+          - Query parameter: Are value after ? in URI
+    13. HTTP (HYper Text Trasfer protocol) : used to allow application to make request via internet
+        2 parts:
+          - HTTP Request: Client application  will make request to server
+           - 2 parts:
+              - Header part : to keep secret data
+              - Body Part:  used to hold the data( Binery/xml/JSON...) to be transfered from client to server
+            - HTTP methods:
+              - GET: used to get/read data from an application
+              - POST:  Used to create/store data
+              - PUT: Update data Completely
+              - PATCH: used to update data partially
+              - DELETE: used to remove data 
+
+          - HTTP Response Status: To get response status of request , browser is using HTTP response  
+            -status codes:
+                - 1XX : Informational 
+                - 2XX : success
+                - 3XX : Redirection
+                - 4XX : Client error
+                - 5XX : Server error 
+    14. JSON(Java Script Object Notation): Is a data formart  used to transfer data from application to another application using internet.
+     - data stored a key value pairs, here "key" must be always string type
+        ex: "username" : "Max", "age": 39
+    15. API call in JS:  AJAX(asyncronous javascript and XML) : methods to make api calls using JS.
+      - APi call using - XMLHttpRequest(XHR)
+          XMLHttpRequest class has predefined functions and properties to make sending request and response between application in internet
+          - Object of XmlHttpRequest is used to interact with server application
+          - XmlHttpRequest class Properties:
+              - readyState : return a number which indicates the state of a request, if readyState  == 4 then request receives the response.
+              - responseText :  return a string that contain the response to the request as text
+              - status :  return response status code of the Request
+          - XMLHttpRequest  class methods
+            - open(): used to initialize a request
+            - send(): send the request
+          - Events: 
+            - onreadystatechange: event to occur whenever the value of readyState changes
+          - Steps to make API call
+            1. create an object for XMLHttpRequest class
+            2. Initialize the request using open method
+            3. send request
+      - API call using fetch API:
+          - fetch() function returns promise,  then resolved response will get from " then" method and reject response get from "catch" method
+         
+
+         
+    ------------------------------------------------------------------------------
+                REACT:  Advanced Frontend Application Library
+    ------------------------------------------------------------------------------
+
+        1. Basic React:
+            - React App is a collection of different libraries
+            - React App is consist of different components, which used to display contents on browser. All the components are arrangd in a tree structure.  Tree structure has a single parent/rootnode which is by default known as "APP component",  Components are reusable. 
+            - Pure Javasript functions to build components, it return how to display contents in browser. These functions are capable of doing single task with the help of arguments. fucntions with no side effects.
+            - Declarative Approach
+            - virtual DOM: Light-weight memory representation of real DOM
+            - Babel Library: used to display contents into browser
+            - JSX (Javascript XML): JS extention for writing HTMl code in Javascript, used to display content in browser  
+              - JSX elements:  ex: const heading = <h1>Heading </h2>
+              - Rules for using JSX
+                  - Every JSX elements must be inside a single tag. Parent tag can be any  Container tag( div, section,article etc....) or  react fragments(<> </>) tag without name
+                  - In JSX we have to use "camel case" to write JSX contents: eg: fontSize
+                  - Every JSX code must have a closing tag.  If a tag has content then: 
+                      <startingTag> content </endingTag>. if a tag has no content: <startingTag></endingTag>
+                      or we can use self closing tags( <startingTag/>)
+                  - Instead of attribute "class" use "className" in JSX
+                  - Insead of attribute "for"  use "htmlFor" inJSX
+                  - In JSX,  we can directly pass JS code inside a curly braces, (eg: {js code})
+        2. React App Creation
+            - 2 ways to create react App
+              - CRA( using create-react-app command)
+              - Vite :  tool for bulding web applications
+                - Installing vite globally : npm i -g create-vite
+                - React app creation using Vite: npm create vite@latest reactAppname -- -- template react
+       
